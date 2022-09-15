@@ -147,13 +147,14 @@ else
    do_stcap &
 fi   
 iostat -x -c -d -t 1 >> iostat-`hostname`.out &
+mpstat -P ALL -I SCPU -u 1 >> mpstat-`hostname`.out &
 do_ttop &
 
 
 echo "launched commands, press Ctrl-C to exit, or wait " $MAX_SECONDS " seconds for the script to complete automatically"
 echo "children list "
 jobs
-#wait 75s to have the lot
+#wait $MAX_SECONDS to have the lot
 for ((n=$MAX_SECONDS;n>0;n--)); do
    echo -e -n $n \\r
    sleep 1
