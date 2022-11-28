@@ -77,7 +77,7 @@ $1=="Pool" {
 #Gossip messages                 n/a         0        2375402         0
 #
 
-#example netcracker (6.8)
+#example record (DSE 6.8)
 #
 #Sat Apr 16 10:39:57 CEST 2022
 #Mode: NORMAL
