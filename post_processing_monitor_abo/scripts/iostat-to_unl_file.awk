@@ -1,12 +1,3 @@
-
-
-#from netcracker
-       # print "hostname",hostname;
-       # print "ip: ",ip;
-       # print "runid: ",runid;       #this could be an ID so that if there are multiple collections, I discriminate
-       # print "outfile: ",outfile;   #should be complete of path but no extenstion I'll then complete it
-       
-       
 #FORMAT
 #08/11/2022 08:09:11 PM
 #avg-cpu:  %user   %nice %system %iowait  %steal   %idle
@@ -16,7 +7,7 @@
 #fd0               0.00     0.00    0.00    0.00     0.00     0.00     8.00     0.00   42.43   42.43    0.00  42.43   0.00
        
 function dumpit() {
-   OFS=","                        #should not call them csv if I use | as separator
+   OFS=","                       
    print point,
               hostname,
               ip,
