@@ -1,0 +1,7 @@
+#TODO: replace with a template to fill or command line options
+
+export ABO_CUSTOMER=my_custmer_name
+export ABO_CASE=000123456
+export ABO_CAPTURE=("afternoon" "evening")   #this will be used as run_id. It's a list as there may be multiple runs
+export ABO_BASE_DIR=/mnt/d/cases/2022-09/000123456-latency_issues/12-09-sample
+export MYSQL_CONF=mysql.conf
