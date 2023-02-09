@@ -23,7 +23,7 @@ RUN_ID=`date +%s`
 
 #all timestamps in ISO
 isodate="date --iso-8601=seconds"
-S_TIME_FORMAT=ISO
+export S_TIME_FORMAT=ISO
 
 #presumes only ONE DSE process is running,
 PS_LINE=$(ps -e -o pid,user:20,cmd| grep com.datastax.bdp.DseModule| grep -v grep)
